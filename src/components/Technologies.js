@@ -1,16 +1,18 @@
-const Technologies = ({ tech1, tech2, tech3 }) => {
+const Technologies = ({ technologies }) => {
+    if (!technologies || technologies.length === 0) return null;
+
     return (
-        <>
-            <div className="text-xs sm:text-[10px] text-primaryRed dark:text-primaryDarkOrange">
-                {tech1}
-            </div>
-            <div className="text-xs sm:text-[10px] text-primaryPurple dark:text-primaryDarkYellow mx-3">
-                {tech2}
-            </div>
-            <div className="text-xs sm:text-[10px] text-primaryBlue dark:text-primaryDark">
-                {tech3}
-            </div>
-        </>
+        <div className="flex flex-wrap gap-2 mt-2">
+            {technologies.map((tech, index) => (
+                <span
+                    key={index}
+                    className="px-3 py-1 text-sm font-medium rounded-full bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300 hover:bg-violet-200 dark:hover:bg-violet-900/40 transition-colors"
+                    title={tech}
+                >
+                    {tech}
+                </span>
+            ))}
+        </div>
     );
 };
 

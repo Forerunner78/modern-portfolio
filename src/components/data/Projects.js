@@ -1,5 +1,5 @@
 import Jungle from "./../../img/Jungle.jpg";
-import Books from "./../../img/Books2.jpg";
+import Books from "./../../img/Books.jpg";
 import Hotel from "./../../img/Hotel.jpg";
 import Marvel from "./../../img/Marvel.jpg";
 import News from "./../../img/News.jpg";
@@ -11,54 +11,37 @@ import AlexShopEcommerce from "./../../img/Alex_Shop_Ecommerce.jpg";
 export const projects = {
     collaborations: [
         {
-            name: "L'Oréal",
-            time: "2 ans et 7 mois",
-            projects: [
-                "Biotherm",
-                "Decleor",
-                "Dermacenter",
-                "GiorgioArmani",
-                "House99",
-                "Helena_Rubinstein",
-                "Itcosmetics",
-                "Kerastase",
-                "Kiehls",
-                "Lancome",
-                "LaRochePosay",
-                "Mugler",
-                "Nyx",
-                "Skinceuticals",
-                "Staffshop",
-                "Urban_Decay",
-                "Valentino",
-                "Vichy",
-                "Yves_Saint_Laurent",
-            ],
-            position: "Developpeur Web Back-end chez Capgemini",
-            company: "L'Oréal",
-            companyLink: "https://www.loreal.com/fr/",
-            address: "Paris",
-            work: "Prise en charge de bugs liés au code / à la contribution du Business Manager.. Résolution de bugs 'critiques'.. Implémentation, activation et amélioration du fonctionnement de nouvelles features (programme fidélité et commandes récurrentes).. Implication dans la de revue de code et de documentation.. Rédaction de documents techniques pour présenter des fonctionalités / services mis en place.",
+            name: "MADAGENCE",
+            time: "sept. 2023 - juin 2025 · 1 an 10 mois",
+            projects: ["Sisley", "Haribo", "Groupe Petite Enfance"],
+            position: "Développeur back-end | B2C Salesforce Commerce Cloud",
+            company: "MADAGENCE",
+            companyLink: "https://www.madagence.com",
+            address: "Orléans · À distance",
+            work:
+                "Refonte de l'espace client (commandes, cartes cadeaux, données personnelles) — amélioration de la navigation et réduction du temps d'affichage d'environ 30%. Développement d'e-mails transactionnels (commande, expédition, retour) pour clarifier le suivi client. Développement d'APIs vers United Retail permettant d'agréger l'historique d'achats (web & magasin) et les informations liées aux cartes cadeaux. Activation de Klarna Pay Now et conception d'un country-switcher pour améliorer la conversion mobile et l'expérience internationale.",
         },
         {
-            name: "Orchestra",
-            time: "7 mois",
-            projects: ["Orchestra"],
-            position: "Developpeur Web Back-end chez Capgemini",
-            company: "Orchestra",
-            companyLink: "https://fr.shop-orchestra.com/",
-            address: "Paris",
-            work: "Refonte des filtres du site internet au moyen de javascript orienté objet.. Résolution de bugs.. Manipulation de custom / system objects.",
+            name: "Capgemini",
+            time: "oct. 2020 - août 2023 · 2 ans 11 mois",
+            projects: ["L'Oréal (plusieurs marques)"],
+            position: "Développeur back-end | B2C Salesforce Commerce Cloud",
+            company: "Capgemini",
+            companyLink: "https://www.capgemini.com/",
+            address: "Paris · Hybride",
+            work:
+                "Participation à des projets BUILD, RUN et ROLLOUT pour des marques du groupe L'Oréal (Urban Decay, Kiehl's, YSL…). Développement d'un programme de fidélité multimarques pour renforcer la rétention client. Refonte de composants critiques (navigation, filtres, footer) avec amélioration des performances d'environ 15%. Gestion d'incidents critiques en production pour rétablir rapidement les parcours d'achat. Collaboration internationale et contribution aux revues de code pour garantir la qualité.",
         },
         {
-            name: "FastRetailing",
-            time: "7 mois",
-            projects: ["Comptoir_des_Cotonniers", "Princess_Tam_Tam"],
-            position: "Developpeur Web full-Stack chez Capgemini",
-            company: "FastRetailing",
-            companyLink: "https://www.fastretailing.com/eng/",
-            address: "Paris",
-            work: "Implémentation des services 'Google Autocomplete address form' et 'Vimeo'.. Refonte graphique complète des footers des sites 'Princesse Tam-Tam' et 'Comptoir des Cotonniers'.",
+            name: "Capgemini",
+            time: "oct. 2019 - oct. 2020 · 1 an 1 mois",
+            projects: ["Fast Retailing", "Orchestra"],
+            position: "Développeur back-end | B2C Salesforce Commerce Cloud",
+            company: "Capgemini",
+            companyLink: "https://www.capgemini.com/",
+            address: "Paris · Hybride",
+            work:
+                "Conduite de projets pour Fast Retailing (Princess Tam Tam, Comptoir des Cotonniers) et Orchestra. Refonte de composants clés (navigation, filtres, footer) pour améliorer la fluidité. Ajout de fonctionnalités front (Google Autocomplete) pour améliorer la saisie d'adresse. Diagnostic et résolution de bugs critiques afin de fiabiliser les parcours utilisateurs.",
         },
     ],
     personnalProjects: [
@@ -75,7 +58,7 @@ export const projects = {
         {
             name: "Site web Portfolio",
             img: Portfolio,
-            live_demo_url: "https://modern-portfolio-forerunner78.vercel.app/",
+            live_demo_url: "https://modern-portfolio-alexandre-ribault.vercel.app/",
             gitHub_url: "https://github.com/Forerunner78/modern-portfolio",
             technologies: ["#nextJS", "#tailwindcss", "#framer-motion"],
             colSize: 6,

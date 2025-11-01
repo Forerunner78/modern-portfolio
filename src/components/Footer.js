@@ -1,34 +1,29 @@
 import Layout from "./Layout";
-import Technologies from "./Technologies";
+import UnderlinedLink from "./UnderlinedLink";
+import { colors } from "../styles/theme";
 
 const Footer = () => {
     return (
-        <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:text-light dark:border-light sm:text-base p-0">
-            <Layout className="py-8 md:ps-0 flex items-center justify-evenly xs:flex-col lg:py-6 lg:ps-40 xl:ps-60">
-                <div className="xs:mb-3">
-                    <div className="">
+        <footer className="w-full border-t border-gray-200 dark:border-neutral-800 bg-gray-50/95 dark:bg-neutral-900/95 shadow-[0_-1px_3px_rgba(0,0,0,0.05)] dark:shadow-[0_-1px_3px_rgba(0,0,0,0.3)] backdrop-blur-sm mt-16">
+            <Layout className="max-w-6xl mx-auto px-8 py-8 flex items-center justify-between gap-12 xs:flex-col">
+                <div className="flex flex-row items-center">
+                    <div className={`${colors.text.base} text-sm font-medium text-balance`}>
                         Build with{" "}
-                        <span className="text-primary dark:text-primaryDark text-2xl px-1">
-                            &#9825;
-                        </span>{" "}
-                        by&nbsp;
-                        <span className="underline underline-offset-2">Forerunner</span>
-                    </div>
-                    <div className="w-full flex justify-between mx-auto">
-                        <Technologies tech1="#nextJS" tech2="#tailwindcss" tech3="#framer-motion" />
+                        <span className={colors.text.violet}>&#9825;</span>
+                        {" "}by{" "}
+                        <UnderlinedLink href="https://github.com/Forerunner78" className={colors.text.violet} >
+                            Alexandre Ribault
+                        </UnderlinedLink>
                     </div>
                 </div>
-                <div className="xs:mt-3">
-                    <div>{new Date().getFullYear()} &copy; All Rights Reserved</div>
-                    <div className="w-full flex justify-end mx-auto text-xs">
-                        Thank you&nbsp;
-                        <a
-                            href="https://github.com/codebucks27"
-                            className="underline underline-offset-2 cursor-pointer"
-                        >
+
+                <div className="flex flex-col items-end text-sm text-gray-500 dark:text-gray-400 xs:items-center xs:mt-6">
+                    <div className="mb-2 font-medium">{new Date().getFullYear()} &copy; All Rights Reserved</div>
+                    <div className="text-xs">
+                        Thanks to{" "}
+                        <UnderlinedLink href="https://github.com/codebucks27" className={colors.text.violet}>
                             CodeBucks
-                        </a>
-                        !
+                        </UnderlinedLink>
                     </div>
                 </div>
             </Layout>

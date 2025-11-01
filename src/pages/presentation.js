@@ -79,11 +79,10 @@ const About = () => {
                                 Biographie
                             </h2>
                             <p className="text-justify font-medium indent-10">
-                                Je suis un développeur web avec une formation initiale scientifique.
-                                Mon parcours académique m&apos;a permis d&apos;acquérir des
-                                compétences telles que la recherche d&apos;information, de solutions
-                                et la curiosité, que j&apos;ai ensuite transposées au développement
-                                web.
+                                Développeur back-end Salesforce Commerce Cloud, j&apos;ai plusieurs années d&apos;expérience dans l&apos;e-commerce. J&apos;améliore des fonctionnalités orientées utilisateur et veille à la performance et la fiabilité du code.
+                                J&apos;ai travaillé sur des refontes de plateformes et l&apos;intégration d&apos;APIs et de solutions de paiement pour différents projets (l&apos;Oréal, Orchestra, Sergent Major). Je m&apos;intéresse particulièrement à la résolution de bugs pour renforcer la stabilité des environnements techniques.
+                                Mon parcours scientifique m&apos;a permis d&apos;adopter une approche rigoureuse et durable. Je souhaite continuer à faire évoluer des plateformes Salesforce B2C, en collaboration avec des équipes produit et design, pour des parcours utilisateurs efficaces.
+                                Curieux et impliqué, je suis ouvert aux échanges autour de Salesforce, e-commerce ou performance : n&apos;hésitez pas à me contacter !
                             </p>
                             <p className="text-justify font-medium indent-10 my-4">
                                 Au fil de mes {experienceYears()} années d&apos;expérience dans
@@ -115,17 +114,15 @@ const About = () => {
                             />
                         </div>
                         <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
-                            <div className="flex flex-col items-end justify-center xl:items-center">
-                                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5l xs:text-4xl">
-                                    <AnimatedNumbers
-                                        value={collaborationNumber(projects.collaborations)}
-                                    />{" "}
-                                </span>
-                                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                                    Collaborations
+                            <div className="flex flex-col items-end justify-center xl:items-center rounded-2xl border-2 border-solid border-dark bg-light p-4 dark:bg-dark dark:border-light lg:mx-1">
+                                <h2 className="text-3xl font-bold lg:text-2xl sm:text-xl xs:text-lg text-center">
+                                    Développeur certifié
+                                </h2>
+                                <h2 className="text-3xl font-bold lg:text-2xl sm:text-xl xs:text-lg text-center">
+                                    Salesforce Commerce Cloud
                                 </h2>
                             </div>
-                            <div className="flex flex-col items-end xl:items-center justify-center">
+                            <div className="flex flex-col items-end xl:items-center justify-center lg:mx-1">
                                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5l xs:text-4xl">
                                     <AnimatedNumbers
                                         value={projectsNumber(projects.collaborations)}
@@ -135,11 +132,11 @@ const About = () => {
                                     Projets
                                 </h2>
                             </div>
-                            <div className="flex flex-col items-end justify-center xl:items-center">
+                            <div className="flex flex-col items-end justify-center xl:items-center lg:mx-1">
                                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5l xs:text-4xl">
                                     <AnimatedNumbers value={experienceYears()} /> +
                                 </span>
-                                <h2 className="text-xl font-medium text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                                <h2 className="text-xl font-medium text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm text-right">
                                     Années d&apos;experience
                                 </h2>
                             </div>
