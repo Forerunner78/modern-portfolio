@@ -14,15 +14,15 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Accueil — Portfolio d&apos;Alexandre Ribault | Dev Full Stack IA</title>
+                <title>Accueil · Portfolio d&apos;Alexandre Ribault | Dev Full Stack IA</title>
                 <meta
                     name="description"
-                    content="Alexandre Ribault — développeur Full Stack IA. Vibe coding avec Claude Code, 3 applications en production en 2026 : Dog Days, Runova, Commis."
+                    content="Alexandre Ribault, développeur Full Stack IA. Vibe coding avec Claude Code, 3 applications en production en 2026 : Dog Days, Runova, Commis."
                 />
-                <meta property="og:title" content="Accueil — Portfolio d'Alexandre Ribault | Dev Full Stack IA" />
+                <meta property="og:title" content="Accueil · Portfolio d'Alexandre Ribault | Dev Full Stack IA" />
                 <meta
                     property="og:description"
-                    content="Alexandre Ribault — développeur Full Stack IA. Vibe coding avec Claude Code, 3 applications en production en 2026 : Dog Days, Runova, Commis."
+                    content="Alexandre Ribault, développeur Full Stack IA. Vibe coding avec Claude Code, 3 applications en production en 2026 : Dog Days, Runova, Commis."
                 />
             </Head>
             <TransitionEffect />
@@ -46,7 +46,7 @@ export default function Home() {
                                 Alexandre Ribault
                             </h1>
                             <p className={`${colors.text.base} justify-center text-justify m-auto mt-3 px-auto text-lg sm:text-xl max-w-2xl`}>
-                                Développeur Full Stack IA. Je conçois et livre des applications web et mobiles en vibe coding avec Claude Code — 3 produits mis en production en 2026 : un jeu 4X multijoueur, une app Android de running gamifiée et un assistant pâtisserie IA.
+                                Développeur Full Stack IA. Je conçois et livre des applications web et mobiles en vibe coding avec Claude Code : 3 produits mis en production en 2026, un jeu 4X multijoueur, une app Android de running gamifiée et un assistant pâtisserie IA.
                             </p>
 
                             <div className="mt-6 flex flex-row lg:flex-col items-center justify-center mx-auto space-x-4 lg:space-x-0 lg:space-y-3 lg:self-center">

@@ -55,15 +55,15 @@ const About = () => {
     return (
         <>
             <Head>
-                <title>Présentation — Alexandre Ribault | Dev Full Stack IA</title>
+                <title>Présentation · Alexandre Ribault | Dev Full Stack IA</title>
                 <meta
                     name="description"
-                    content="Parcours d'Alexandre Ribault — 6 ans d'expérience Full Stack JavaScript, spécialisé dans l'intégration de LLM au cœur des produits métiers. Utilisateur quotidien de Claude Code."
+                    content="Parcours d'Alexandre Ribault, 6 ans d'expérience Full Stack JavaScript, spécialisé dans l'intégration de LLM au cœur des produits métiers. Utilisateur quotidien de Claude Code."
                 />
-                <meta property="og:title" content="Présentation — Alexandre Ribault | Dev Full Stack IA" />
+                <meta property="og:title" content="Présentation · Alexandre Ribault | Dev Full Stack IA" />
                 <meta
                     property="og:description"
-                    content="Parcours d'Alexandre Ribault — 6 ans d'expérience Full Stack JavaScript, spécialisé dans l'intégration de LLM au cœur des produits métiers. Utilisateur quotidien de Claude Code."
+                    content="Parcours d'Alexandre Ribault, 6 ans d'expérience Full Stack JavaScript, spécialisé dans l'intégration de LLM au cœur des produits métiers. Utilisateur quotidien de Claude Code."
                 />
             </Head>
             <TransitionEffect />
@@ -79,13 +79,13 @@ const About = () => {
                                 Biographie
                             </h2>
                             <p className="text-justify font-medium indent-10">
-                                Développeur Full Stack JavaScript avec {experienceYears()} ans d&apos;expérience, je mets aujourd&apos;hui les LLM au cœur des produits métiers. Utilisateur quotidien de Claude Code, je pratique le vibe coding : orchestration d&apos;agents, context engineering avancé, cycle produit complet piloté par IA. Ma stack principale : React, TypeScript, Node.js, MongoDB — éprouvée sur des projets e-commerce à forte audience et sur mes propres applications avec intégration LLM (Anthropic, Gemini).
+                                Développeur Full Stack JavaScript avec {experienceYears()} ans d&apos;expérience, je mets aujourd&apos;hui les LLM au cœur des produits métiers. Utilisateur quotidien de Claude Code, je pratique le vibe coding : orchestration d&apos;agents, context engineering avancé, cycle produit complet piloté par IA. Ma stack principale : React, TypeScript, Node.js, MongoDB, éprouvée sur des projets e-commerce à forte audience et sur mes propres applications avec intégration LLM (Anthropic, Gemini).
                             </p>
                             <p className="text-justify font-medium indent-10 my-4">
-                                Mon parcours est né chez Capgemini (2019-2023), où j&apos;ai contribué aux plateformes e-commerce du groupe L&apos;Oréal (Urban Decay, Kiehl&apos;s, YSL), Fast Retailing et Orchestra — diagnostic de bugs critiques en production, refonte de composants stratégiques, coordination d&apos;équipes offshore. J&apos;ai poursuivi chez Madagence (2023-2025) en intégrant mes premiers LLM dans les workflows métier : un outil React + API GPT pour automatiser l&apos;enrichissement des fiches produits Sisley, Neuraé et Haribo. J&apos;ai obtenu la certification Salesforce B2C Commerce Developer en 2023.
+                                Mon parcours est né chez Capgemini (2019-2023), où j&apos;ai contribué aux plateformes e-commerce du groupe L&apos;Oréal (Urban Decay, Kiehl&apos;s, YSL), Fast Retailing et Orchestra : diagnostic de bugs critiques en production, refonte de composants stratégiques, coordination d&apos;équipes offshore. J&apos;ai poursuivi chez Madagence (2023-2025) en intégrant mes premiers LLM dans les workflows métier : un outil React + API GPT pour automatiser l&apos;enrichissement des fiches produits Sisley, Neuraé et Haribo. J&apos;ai obtenu la certification Salesforce B2C Commerce Developer en 2023.
                             </p>
                             <p className="text-justify font-medium indent-10">
-                                En 2026, j&apos;ai livré trois applications from scratch avec intégration LLM en pilotant le cycle produit complet par IA : <strong>Dog Days</strong> (jeu 4X multijoueur web — Next.js, MongoDB, Redis, 1&nbsp;200+ tests), <strong>Commis</strong> (assistant pâtisserie IA sur Android — React Native, Gemini Flash) et <strong>Runova</strong> (app gamifiée Couch-to-5K — cycle produit en 14 jours). Profil product-first, autonome, issu d&apos;une formation scientifique (Doctorat en Biothérapie Cellulaire et Tissulaire, UPMC 2018), je cherche aujourd&apos;hui un poste de développeur Full Stack IA ou un binôme CTO. N&apos;hésitez pas à me contacter !
+                                En 2026, j&apos;ai livré trois applications from scratch avec intégration LLM en pilotant le cycle produit complet par IA : <strong>Dog Days</strong> (jeu 4X multijoueur web, Next.js, MongoDB, Redis, 1&nbsp;200+ tests), <strong>Commis</strong> (assistant pâtisserie IA sur Android, React Native, Gemini Flash) et <strong>Runova</strong> (app gamifiée Couch-to-5K, cycle produit en 14 jours). Profil product-first, autonome, issu d&apos;une formation scientifique (Doctorat en Biothérapie Cellulaire et Tissulaire, UPMC 2018), je cherche aujourd&apos;hui un poste de développeur Full Stack IA ou un binôme CTO. N&apos;hésitez pas à me contacter !
                             </p>
                         </div>
                         <div className="hidden md:block" />

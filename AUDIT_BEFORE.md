@@ -1,4 +1,4 @@
-# Audit BEFORE — modern-portfolio — Avril 2026
+# Audit BEFORE · modern-portfolio · Avril 2026
 
 > Baseline avant refacto Claude Code.
 > Document de référence pour le contenu LinkedIn "avant/après".
@@ -17,7 +17,7 @@
 | Date de la mesure "before" | 14 avril 2026 |
 | Modes testés | Desktop + Mobile (2 rapports séparés) |
 | Throttling | Valeurs par défaut Lighthouse (Simulated Slow 4G + CPU 4× slowdown en mobile) |
-| Viewport | Défaut Lighthouse — desktop 1350×940 / mobile 412×823 (Moto G Power) |
+| Viewport | Défaut Lighthouse · desktop 1350×940 / mobile 412×823 (Moto G Power) |
 | Navigateur | Chrome dernière version stable |
 | Mode navigation | Mode incognito (par défaut lors d'un test Lighthouse depuis DevTools) |
 | Catégories mesurées | Performance, Accessibilité, Bonnes pratiques, SEO |
@@ -33,7 +33,7 @@ Pour chaque chantier qui impacte des KPIs Lighthouse (chantiers 2, 3, 4) :
 3. DevTools (F12) > onglet Lighthouse
 4. Mode : Navigation | Device : Desktop (puis refaire en Mobile) | Catégories : toutes
 5. **Lancer 3 fois** et prendre la médiane (Lighthouse varie de ±3 points entre runs)
-6. Screenshot des 2 rapports (desktop + mobile) — les sauvegarder dans `public/screenshots/after/chantier-N/`
+6. Screenshot des 2 rapports (desktop + mobile) · les sauvegarder dans `public/screenshots/after/chantier-N/`
 7. Reporter les chiffres dans le tableau correspondant ci-dessous
 
 ---
@@ -47,17 +47,17 @@ Les 8 screenshots "before" sont dans le dossier local :
 
 Liste :
 1. Terminal `grep -rn "framer-motion" src` → 11 fichiers importent Framer Motion
-2. Homepage desktop — bio "Développeur spécialisé en Salesforce Commerce Cloud" visible
-3. Homepage mobile — 390px
-4. `Icons.js` ouvert dans VS Code — 425 lignes visibles
-5. NavBar zoomée — 4 icônes sans aria-label
-6. `package.json` — Next.js 13.3.0, aucun script `test`
-7. Page Projets — vieux projets tutos (Alex Shop, etc.)
+2. Homepage desktop · bio "Développeur spécialisé en Salesforce Commerce Cloud" visible
+3. Homepage mobile · 390px
+4. `Icons.js` ouvert dans VS Code · 425 lignes visibles
+5. NavBar zoomée · 4 icônes sans aria-label
+6. `package.json` · Next.js 13.3.0, aucun script `test`
+7. Page Projets · vieux projets tutos (Alex Shop, etc.)
 8. Terminal `find . -name "*.test.*"` → "Fichier introuvable"
 
 ---
 
-## ⚡ Lighthouse & Core Web Vitals — Capturé le 14 avril 2026
+## ⚡ Lighthouse & Core Web Vitals · Capturé le 14 avril 2026
 
 ### Desktop
 | Métrique | Score AVANT | Score APRÈS |
@@ -86,10 +86,10 @@ Liste :
 | Speed Index | 2.2 s | |
 
 ### Problèmes critiques identifiés par Lighthouse
-- 🔴 **932 KB de JavaScript inutilisé** — le chiffre le plus impactant
+- 🔴 **932 KB de JavaScript inutilisé** · le chiffre le plus impactant
 - 🟡 51 KB de JavaScript non minifié
-- 🔴 **CLS desktop à 0.431** — seuil acceptable : < 0.1 (soit 4× trop élevé)
-- 🔴 **TBT mobile : 1 620 ms** — seuil acceptable : < 200 ms (soit 8× trop élevé)
+- 🔴 **CLS desktop à 0.431** · seuil acceptable : < 0.1 (soit 4× trop élevé)
+- 🔴 **TBT mobile : 1 620 ms** · seuil acceptable : < 200 ms (soit 8× trop élevé)
 - 🔴 Boutons sans nom accessible (desktop + mobile)
 - 🔴 Liens sans nom accessible (desktop)
 
@@ -126,7 +126,7 @@ Liste :
 
 ---
 
-## 🖼️ Images — Problèmes critiques
+## 🖼️ Images · Problèmes critiques
 
 | Fichier | Taille | Problème |
 |---|---|---|
@@ -164,7 +164,7 @@ Elles sont importées via `next/image` (bon point) mais les fichiers source sont
 
 ---
 
-## ♿ Accessibilité — Problèmes identifiés statiquement
+## ♿ Accessibilité · Problèmes identifiés statiquement
 
 | Point | Status AVANT |
 |---|---|
@@ -176,7 +176,7 @@ Elles sont importées via `next/image` (bon point) mais les fichiers source sont
 
 ---
 
-## 🧹 Qualité du code — Dettes identifiées
+## 🧹 Qualité du code · Dettes identifiées
 
 | Dette | Détail | Chantier associé |
 |---|---|---|
@@ -192,11 +192,11 @@ Elles sont importées via `next/image` (bon point) mais les fichiers source sont
 
 ---
 
-## 📋 Les 6 chantiers — numérotation canonique
+## 📋 Les 6 chantiers · numérotation canonique
 
 Cette numérotation est identique dans `CLAUDE.md` et `ROADMAP_REFACTO.md`.
 
-### Chantier 1 — Contenu & UX
+### Chantier 1 · Contenu & UX
 - Réécrire la bio homepage (SFCC → dev Full Stack IA, vibe coding)
 - Remplacer les projets tutos par Dog Days, Runova, Commis
 - Corriger `lang="en"` → `lang="fr"` dans _document
@@ -205,19 +205,19 @@ Cette numérotation est identique dans `CLAUDE.md` et `ROADMAP_REFACTO.md`.
 - Mettre à jour `resume.pdf`
 - Mettre à jour `Skills.js` (Claude Code, Gemini Flash, etc.)
 
-### Chantier 2 — Accessibilité
+### Chantier 2 · Accessibilité
 - Identifier et ajouter les `aria-label` manquants sur boutons et liens icônes
 - Vérifier les attributs `alt` sur toutes les images
 - Vérifier le contraste des couleurs (mode clair + sombre)
 - Lancer `npm run lint` zéro warning
 
-### Chantier 3 — CLS
+### Chantier 3 · CLS
 - Identifier les éléments causant du layout shift (images sans dimensions, fonts, animations)
 - Ajouter `width`/`height` explicites sur toutes les images
 - Vérifier `font-display: swap`
 - Remplacer les animations qui déplacent le layout par des animations en `opacity`/`scale`
 
-### Chantier 4 — Performance JS + Images
+### Chantier 4 · Performance JS + Images
 **Partie A - JavaScript :**
 - Installer `@next/bundle-analyzer`, screenshot treemap avant/après
 - Imports granulaires de Framer Motion
@@ -231,14 +231,14 @@ Cette numérotation est identique dans `CLAUDE.md` et `ROADMAP_REFACTO.md`.
 - Remplacement favicon.ico (39 KB → <5 KB)
 - Suppression `dream_developer.png`
 
-### Chantier 5 — Migration TypeScript
+### Chantier 5 · Migration TypeScript
 - Installer TypeScript + types Next.js/React
 - Créer `tsconfig.json` strict (target es2022)
 - Renommer 25 fichiers `.js` → `.ts/.tsx` un par un
 - Typer chaque prop de composant via une interface
 - Atteindre 0 erreur sur `npx tsc --noEmit`
 
-### Chantier 6 — Tests
+### Chantier 6 · Tests
 - Configurer Vitest + Testing Library + jsdom
 - Écrire les tests des 14 composants
 - Cible : > 80% de coverage (lignes + fonctions + branches)
@@ -247,9 +247,9 @@ Cette numérotation est identique dans `CLAUDE.md` et `ROADMAP_REFACTO.md`.
 
 ## 🎯 Chiffres à capturer pour les posts LinkedIn
 
-**Avant refacto — chiffres définitifs :**
-- Performance desktop : **74/100** — mobile : **72/100**
-- Accessibilité desktop : **89/100** — mobile : 94/100
+**Avant refacto · chiffres définitifs :**
+- Performance desktop : **74/100** · mobile : **72/100**
+- Accessibilité desktop : **89/100** · mobile : 94/100
 - CLS desktop : **0.431** (4× au-dessus du seuil acceptable)
 - TBT mobile : **1 620 ms** (8× au-dessus du seuil acceptable)
 - JavaScript inutilisé : **932 KB**
@@ -283,4 +283,4 @@ Cette numérotation est identique dans `CLAUDE.md` et `ROADMAP_REFACTO.md`.
 
 ---
 
-*Généré le 14 avril 2026 — Mis à jour le 17 avril 2026 (méthodologie + harmonisation numérotation)*
+*Généré le 14 avril 2026 · Mis à jour le 17 avril 2026 (méthodologie + harmonisation numérotation)*

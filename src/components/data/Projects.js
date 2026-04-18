@@ -1,5 +1,5 @@
 import AlexShopEcommerce from "./../../img/Alex_Shop_Ecommerce.jpg";
-import DogDays from "./../../img/dogdays/HQ_preview_lvl3.png";
+import DogDays from "./../../img/dogdays/KluITgQ - Imgur.jpg";
 import Runova from "./../../img/runova/Screenshot_20260403_093659_Runova Couch to 5K.jpg";
 import Commis from "./../../img/commis/Screenshot_20260409_210544_Commis.jpg";
 
@@ -13,7 +13,7 @@ export const projects = {
             company: "AR Digital",
             address: "Paris · Indépendant",
             work:
-                "Création d'AR Digital — structure indépendante dédiée au développement produit piloté par IA. Cycle produit complet mené en solo avec Claude Code : étude de marché, PRD, CLAUDE.md, skills custom, développement et déploiement. Trois applications livrées from scratch — Dog Days (jeu 4X multijoueur web NextJS/MongoDB/Redis, 1 200+ tests), Commis (assistant pâtisserie IA Android React Native/Gemini Flash) et Runova (Couch-to-5K gamifiée Expo/Firebase, livrée en 14 jours). Orchestration d'agents IA, context engineering avancé, TDD strict.",
+                "Création d'AR Digital, structure indépendante dédiée au développement produit piloté par IA. Cycle produit complet mené en solo avec Claude Code : étude de marché, PRD, CLAUDE.md, skills custom, développement et déploiement. Trois applications livrées from scratch : Dog Days (jeu 4X multijoueur web NextJS/MongoDB/Redis, 1 200+ tests), Commis (assistant pâtisserie IA Android React Native/Gemini Flash) et Runova (Couch-to-5K gamifiée Expo/Firebase, livrée en 14 jours). Orchestration d'agents IA, context engineering avancé, TDD strict.",
         },
         {
             name: "MADAGENCE",
@@ -55,7 +55,7 @@ export const projects = {
             colSize: 6,
             status: "En revue Google Play",
             summary:
-                "Assistant pâtissier IA sur Android — actuellement en revue par Google en vue de sa publication sur le Play Store. Stack React Native / Expo SDK 55, Gemini Flash, expo-sqlite. Scan IA multi-photo de recettes (livre, blog, manuscrit) avec structuration automatique. Assistant conversationnel spécialisé pâtisserie, paywall RevenueCat, i18n 4 langues, base SQLite offline-first.",
+                "Assistant pâtissier IA sur Android, actuellement en revue par Google en vue de sa publication sur le Play Store. Stack React Native / Expo SDK 55, Gemini Flash, expo-sqlite. Scan IA multi-photo de recettes (livre, blog, manuscrit) avec structuration automatique. Assistant conversationnel spécialisé pâtisserie, paywall RevenueCat, i18n 4 langues, base SQLite offline-first.",
         },
         {
             name: "Runova",
@@ -67,7 +67,7 @@ export const projects = {
                 "App mobile gamifiée Couch-to-5K (React Native / Expo, Firebase, RevenueCat). Cycle produit complet piloté par IA en 14 jours : étude de marché, PRD, CLAUDE.md, skills custom, handoff Claude Code de bout en bout.",
         },
         {
-            name: "Alex Shop — Site e-commerce",
+            name: "Alex Shop · Site e-commerce",
             img: AlexShopEcommerce,
             live_demo_url: "https://alex-shop-blue.vercel.app/",
             gitHub_url: "https://github.com/Forerunner78/alex-shop",
