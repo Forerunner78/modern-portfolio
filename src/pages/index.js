@@ -34,7 +34,7 @@ export default function Home() {
                                 <Image
                                     src={profilePic}
                                     alt="Portrait d'Alexandre Ribault"
-                                    className="object-cover w-full h-full"
+                                    className="object-cover object-top w-full h-full"
                                     priority
                                     sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
                                 />
