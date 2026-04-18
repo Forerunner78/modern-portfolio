@@ -11,37 +11,36 @@ import AlexShopEcommerce from "./../../img/Alex_Shop_Ecommerce.jpg";
 export const projects = {
     collaborations: [
         {
+            name: "AR Digital",
+            time: "févr. 2026 - présent",
+            projects: ["Dog Days", "Commis", "Runova"],
+            position: "Fondateur · Développeur Full Stack IA",
+            company: "AR Digital",
+            address: "Paris · Indépendant",
+            work:
+                "Création d'AR Digital — structure indépendante dédiée au développement produit piloté par IA. Cycle produit complet mené en solo avec Claude Code : étude de marché, PRD, CLAUDE.md, skills custom, développement et déploiement. Trois applications livrées from scratch — Dog Days (jeu 4X multijoueur web NextJS/MongoDB/Redis, 1 200+ tests), Commis (assistant pâtisserie IA Android React Native/Gemini Flash) et Runova (Couch-to-5K gamifiée Expo/Firebase, livrée en 14 jours). Orchestration d'agents IA, context engineering avancé, TDD strict.",
+        },
+        {
             name: "MADAGENCE",
             time: "sept. 2023 - juin 2025 · 1 an 10 mois",
-            projects: ["Sisley", "Haribo", "Groupe Petite Enfance"],
-            position: "Développeur back-end | B2C Salesforce Commerce Cloud",
+            projects: ["Sisley", "Neuraé", "Haribo"],
+            position: "Développeur Full Stack JavaScript et IA",
             company: "MADAGENCE",
             companyLink: "https://www.madagence.com",
             address: "Orléans · À distance",
             work:
-                "Refonte de l'espace client (commandes, cartes cadeaux, données personnelles) — amélioration de la navigation et réduction du temps d'affichage d'environ 30%. Développement d'e-mails transactionnels (commande, expédition, retour) pour clarifier le suivi client. Développement d'APIs vers United Retail permettant d'agréger l'historique d'achats (web & magasin) et les informations liées aux cartes cadeaux. Activation de Klarna Pay Now et conception d'un country-switcher pour améliorer la conversion mobile et l'expérience internationale.",
+                "Intégration de LLM dans les workflows métier : conception d'un outil interne React + API GPT pour automatiser l'enrichissement des fiches produits (génération SEO, import OCAPI) au service des clients Sisley, Neuraé et Haribo. Refonte de l'architecture MVC de l'espace client, améliorant la vitesse d'affichage de 30 %. Conception et développement d'APIs REST omnicanales (web / magasin) et intégration du paiement Klarna. Prototypage rapide et itération directe avec les équipes métier et UX, de la conception à la mise en production.",
         },
         {
             name: "Capgemini",
-            time: "oct. 2020 - août 2023 · 2 ans 11 mois",
-            projects: ["L'Oréal (plusieurs marques)"],
-            position: "Développeur back-end | B2C Salesforce Commerce Cloud",
+            time: "oct. 2019 - août 2023 · 3 ans 11 mois",
+            projects: ["L'Oréal (Urban Decay, Kiehl's, YSL)", "Fast Retailing", "Orchestra"],
+            position: "Développeur Full Stack JavaScript",
             company: "Capgemini",
             companyLink: "https://www.capgemini.com/",
             address: "Paris · Hybride",
             work:
-                "Participation à des projets BUILD, RUN et ROLLOUT pour des marques du groupe L'Oréal (Urban Decay, Kiehl's, YSL…). Développement d'un programme de fidélité multimarques pour renforcer la rétention client. Refonte de composants critiques (navigation, filtres, footer) avec amélioration des performances d'environ 15%. Gestion d'incidents critiques en production pour rétablir rapidement les parcours d'achat. Collaboration internationale et contribution aux revues de code pour garantir la qualité.",
-        },
-        {
-            name: "Capgemini",
-            time: "oct. 2019 - oct. 2020 · 1 an 1 mois",
-            projects: ["Fast Retailing", "Orchestra"],
-            position: "Développeur back-end | B2C Salesforce Commerce Cloud",
-            company: "Capgemini",
-            companyLink: "https://www.capgemini.com/",
-            address: "Paris · Hybride",
-            work:
-                "Conduite de projets pour Fast Retailing (Princess Tam Tam, Comptoir des Cotonniers) et Orchestra. Refonte de composants clés (navigation, filtres, footer) pour améliorer la fluidité. Ajout de fonctionnalités front (Google Autocomplete) pour améliorer la saisie d'adresse. Diagnostic et résolution de bugs critiques afin de fiabiliser les parcours utilisateurs.",
+                "Diagnostic et résolution de bugs critiques en production (checkout, paiement) pour le groupe L'Oréal, zone EMEA. Refonte de composants stratégiques (navigation, filtres, footer) avec un gain de performance de 15 %. Coordination internationale d'équipes offshore, revues de code et mentoring de développeurs juniors.",
         },
     ],
     personnalProjects: [
