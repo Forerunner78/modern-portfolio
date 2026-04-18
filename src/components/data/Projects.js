@@ -1,12 +1,7 @@
-import Jungle from "./../../img/Jungle.jpg";
-import Books from "./../../img/Books.jpg";
-import Hotel from "./../../img/Hotel.jpg";
-import Marvel from "./../../img/Marvel.jpg";
-import News from "./../../img/News.jpg";
-import Shiny from "./../../img/Shiny.jpg";
-import Portfolio from "./../../img/Portfolio.jpg";
-import WorkInProgress from "./../../img/WorkInProgress.jpg";
 import AlexShopEcommerce from "./../../img/Alex_Shop_Ecommerce.jpg";
+import DogDays from "./../../img/dogdays/HQ_preview_lvl3.png";
+import Runova from "./../../img/runova/Screenshot_20260403_093659_Runova Couch to 5K.jpg";
+import Commis from "./../../img/commis/Screenshot_20260409_210544_Commis.jpg";
 
 export const projects = {
     collaborations: [
@@ -45,82 +40,41 @@ export const projects = {
     ],
     personnalProjects: [
         {
-            name: "Alex Shop - Site ecommerce",
+            name: "Dog Days",
+            img: DogDays,
+            live_demo_url: "https://dog-days-web.vercel.app/",
+            technologies: ["#Next.js", "#TypeScript", "#MongoDB", "#Redis", "#Claude Code"],
+            colSize: 12,
+            summary:
+                "Jeu de stratégie 4X multijoueur web en production. Architecture complète pilotée par Claude Code : 17+ systèmes interconnectés, 28 routes API serveur, 20+ agents IA spécialisés orchestrés. 1 200+ tests automatisés (Vitest + Playwright), TDD strict, i18n FR/EN, authentification Google OAuth.",
+        },
+        {
+            name: "Commis",
+            img: Commis,
+            technologies: ["#React Native", "#Expo", "#Gemini Flash", "#SQLite", "#RevenueCat"],
+            colSize: 6,
+            status: "En revue Google Play",
+            summary:
+                "Assistant pâtissier IA sur Android — actuellement en revue par Google en vue de sa publication sur le Play Store. Stack React Native / Expo SDK 55, Gemini Flash, expo-sqlite. Scan IA multi-photo de recettes (livre, blog, manuscrit) avec structuration automatique. Assistant conversationnel spécialisé pâtisserie, paywall RevenueCat, i18n 4 langues, base SQLite offline-first.",
+        },
+        {
+            name: "Runova",
+            img: Runova,
+            technologies: ["#React Native", "#Expo", "#Firebase", "#RevenueCat"],
+            colSize: 6,
+            status: "Projet personnel",
+            summary:
+                "App mobile gamifiée Couch-to-5K (React Native / Expo, Firebase, RevenueCat). Cycle produit complet piloté par IA en 14 jours : étude de marché, PRD, CLAUDE.md, skills custom, handoff Claude Code de bout en bout.",
+        },
+        {
+            name: "Alex Shop — Site e-commerce",
             img: AlexShopEcommerce,
             live_demo_url: "https://alex-shop-blue.vercel.app/",
             gitHub_url: "https://github.com/Forerunner78/alex-shop",
-            technologies: ["#nextJS", "#mongoDB", "#paypal"],
+            technologies: ["#Next.js", "#MongoDB", "#PayPal"],
             colSize: 12,
             summary:
-                "Site web ecommerce construit en utilisant la technologie MERN (mongoDB, Express, React et Node.js). Les données sont stockées sur mongoDB. Il permet de simuler des achats au moyen de Paypal. En outre il possède un système d'authentification.",
-        },
-        {
-            name: "Site web Portfolio",
-            img: Portfolio,
-            live_demo_url: "https://modern-portfolio-alexandre-ribault.vercel.app/",
-            gitHub_url: "https://github.com/Forerunner78/modern-portfolio",
-            technologies: ["#nextJS", "#tailwindcss", "#framer-motion"],
-            colSize: 6,
-            summary:
-                "Site web portfolio responsive créé en utilisant NextJS, framer-motion et TailwindCSS. Il possède des animations et des transitions. Il répertorie tous les projets que j'ai créés.",
-        },
-        {
-            name: "Application de recherche de livres",
-            img: Books,
-            live_demo_url: "https://react-search-books-96687.firebaseapp.com/",
-            gitHub_url: "https://github.com/Forerunner78/React-Books",
-            technologies: ["#ReactJS", "#Redux", "#Bootstrap"],
-            colSize: 6,
-            summary:
-                "Application créée en ReactJS. Elle permet de faire des recherches de livres en utilisant l'API Google et stocker ceux que l'on souhaite dans notre liste.",
-        },
-        {
-            name: "Shiny Agency",
-            img: Shiny,
-            live_demo_url: "https://react-shiny-agency.firebaseapp.com/",
-            gitHub_url: "https://github.com/Forerunner78/React-Shiny-Agency",
-            technologies: ["#ReactJS", "#Javascript", "#CSS3"],
-            colSize: 6,
-            summary:
-                "Template d'un site d'agence créé avec ReactJS. Il possède un dark mode et suggère des profils de développeur en fonction des besoins identifiés au moyen d'un test",
-        },
-        {
-            name: "La Maison Jungle",
-            img: Jungle,
-            live_demo_url: "https://forerunner78.github.io/React-La-Maison-Jungle/",
-            gitHub_url: "https://github.com/Forerunner78/React-La-Maison-Jungle",
-            technologies: ["#React Js", "#HTML5", "#CSS3"],
-            colSize: 6,
-            summary:
-                "Template front-end d'un site e-commerce créé en React. Il permet de manipuler des données, les ajouter ou les retirer de son panier",
-        },
-        {
-            name: "Application Marvel Quiz",
-            img: Marvel,
-            live_demo_url: "https://marvel-quiz-51916.firebaseapp.com/",
-            gitHub_url: "https://github.com/Forerunner78/React-Marvel-Quizz",
-            technologies: ["#React Js", "#Firebase", "#Axios"],
-            colSize: 12,
-            summary:
-                "Application de Quizz créée en ReactJS. Elle fait appelle à de nombreuses dépendances. Firebase a également été utilisé pour gérer l'authentification des utilisateurs, la gestion des profils et mots de passe",
-        },
-        {
-            name: "News Website",
-            img: News,
-            live_demo_url: "https://forerunner78.github.io/Journal-website/",
-            gitHub_url: "https://github.com/Forerunner78/Journal-website",
-            technologies: ["#HTML5", "#CSS3"],
-            colSize: 6,
-            summary: "Template front-end d'un site web d'informations créé en HTML",
-        },
-        {
-            name: "Hotel Website",
-            img: Hotel,
-            live_demo_url: "https://forerunner78.github.io/Hotel/index.html",
-            gitHub_url: "https://github.com/Forerunner78/Hotel",
-            technologies: ["#HTML5", "#CSS3"],
-            colSize: 6,
-            summary: "Template front-end d'un site web d'hotel créé en HTML",
+                "Site e-commerce MERN (MongoDB, Express, React, Node.js). Authentification utilisateurs, panier, checkout simulé via PayPal. Premier projet personnel Full Stack déployé.",
         },
     ],
 };
