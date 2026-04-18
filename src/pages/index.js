@@ -14,15 +14,15 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Page d&apos;acceuil PortFolio d&apos;Alexandre Ribault</title>
+                <title>Accueil — Portfolio d&apos;Alexandre Ribault | Dev Full Stack IA</title>
                 <meta
                     name="description"
-                    content="Portfolio d'Alexandre Ribault généré par NextJs"
+                    content="Alexandre Ribault — développeur Full Stack IA. Vibe coding avec Claude Code, 3 applications en production en 2026 : Dog Days, Runova, Commis."
                 />
-                <meta property="og:title" content="Page d'acceuil PortFolio d'Alexandre Ribault" />
+                <meta property="og:title" content="Accueil — Portfolio d'Alexandre Ribault | Dev Full Stack IA" />
                 <meta
                     property="og:description"
-                    content="Portfolio d'Alexandre Ribault généré par NextJs"
+                    content="Alexandre Ribault — développeur Full Stack IA. Vibe coding avec Claude Code, 3 applications en production en 2026 : Dog Days, Runova, Commis."
                 />
             </Head>
             <TransitionEffect />
