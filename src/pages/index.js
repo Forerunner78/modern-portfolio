@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Image from "next/image";
-import profilePic from "./../img/dream_developer.png";
+import profilePic from "./../img/photo_Alex_R.jpg";
 import Link from "next/link";
 import { componentStyles, colors } from "../styles/theme";
 import { LinkArrow } from "../components/Icons";
@@ -46,7 +46,7 @@ export default function Home() {
                                 Alexandre Ribault
                             </h1>
                             <p className={`${colors.text.base} justify-center text-justify m-auto mt-3 px-auto text-lg sm:text-xl max-w-2xl`}>
-                                Développeur spécialisé en Salesforce Commerce Cloud. Je conçois et optimise des plateformes e-commerce performantes et maintenables.
+                                Développeur Full Stack IA. Je conçois et livre des applications web et mobiles en vibe coding avec Claude Code — 3 produits mis en production en 2026 : un jeu 4X multijoueur, une app Android de running gamifiée et un assistant pâtisserie IA.
                             </p>
 
                             <div className="mt-6 flex flex-row lg:flex-col items-center justify-center mx-auto space-x-4 lg:space-x-0 lg:space-y-3 lg:self-center">

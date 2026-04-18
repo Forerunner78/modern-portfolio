@@ -55,15 +55,15 @@ const About = () => {
     return (
         <>
             <Head>
-                <title>Présentation et parcours d&apos;Alexandre Ribault</title>
+                <title>Présentation — Alexandre Ribault | Dev Full Stack IA</title>
                 <meta
                     name="description"
-                    content="Renseignements sur les expériences professionnelles et les études d'Alexandre Ribault"
+                    content="Parcours d'Alexandre Ribault — 6 ans d'expérience Full Stack JavaScript, spécialisé dans l'intégration de LLM au cœur des produits métiers. Utilisateur quotidien de Claude Code."
                 />
-                <meta property="og:title" content="Présentation et parcours d'Alexandre Ribault" />
+                <meta property="og:title" content="Présentation — Alexandre Ribault | Dev Full Stack IA" />
                 <meta
                     property="og:description"
-                    content="Renseignements sur les expériences professionnelles et les études d'Alexandre Ribault"
+                    content="Parcours d'Alexandre Ribault — 6 ans d'expérience Full Stack JavaScript, spécialisé dans l'intégration de LLM au cœur des produits métiers. Utilisateur quotidien de Claude Code."
                 />
             </Head>
             <TransitionEffect />
@@ -79,27 +79,13 @@ const About = () => {
                                 Biographie
                             </h2>
                             <p className="text-justify font-medium indent-10">
-                                Développeur back-end Salesforce Commerce Cloud, j&apos;ai plusieurs années d&apos;expérience dans l&apos;e-commerce. J&apos;améliore des fonctionnalités orientées utilisateur et veille à la performance et la fiabilité du code.
-                                J&apos;ai travaillé sur des refontes de plateformes et l&apos;intégration d&apos;APIs et de solutions de paiement pour différents projets (l&apos;Oréal, Orchestra, Sergent Major). Je m&apos;intéresse particulièrement à la résolution de bugs pour renforcer la stabilité des environnements techniques.
-                                Mon parcours scientifique m&apos;a permis d&apos;adopter une approche rigoureuse et durable. Je souhaite continuer à faire évoluer des plateformes Salesforce B2C, en collaboration avec des équipes produit et design, pour des parcours utilisateurs efficaces.
-                                Curieux et impliqué, je suis ouvert aux échanges autour de Salesforce, e-commerce ou performance : n&apos;hésitez pas à me contacter !
+                                Développeur Full Stack JavaScript avec {experienceYears()} ans d&apos;expérience, je mets aujourd&apos;hui les LLM au cœur des produits métiers. Utilisateur quotidien de Claude Code, je pratique le vibe coding : orchestration d&apos;agents, context engineering avancé, cycle produit complet piloté par IA. Ma stack principale : React, TypeScript, Node.js, MongoDB — éprouvée sur des projets e-commerce à forte audience et sur mes propres applications avec intégration LLM (Anthropic, Gemini).
                             </p>
                             <p className="text-justify font-medium indent-10 my-4">
-                                Au fil de mes {experienceYears()} années d&apos;expérience dans
-                                l&apos;écosystème SFCC, j&apos;ai acquis de solides compétences
-                                techniques et une capacité à répondre rapidement et efficacement aux
-                                problématiques, ce qui m&apos;a permis de contribuer
-                                significativement aux projets auxquels j&apos;ai participé.
-                                J&apos;ai obtenu la certification &quot;Salesforce B2C Commerce
-                                Developer&quot; qui atteste de mes compétences à gérer la
-                                configuration / contribution du Business Manager ainsi que le code
-                                sous-jacent.
+                                Mon parcours est né chez Capgemini (2019-2023), où j&apos;ai contribué aux plateformes e-commerce du groupe L&apos;Oréal (Urban Decay, Kiehl&apos;s, YSL), Fast Retailing et Orchestra — diagnostic de bugs critiques en production, refonte de composants stratégiques, coordination d&apos;équipes offshore. J&apos;ai poursuivi chez Madagence (2023-2025) en intégrant mes premiers LLM dans les workflows métier : un outil React + API GPT pour automatiser l&apos;enrichissement des fiches produits Sisley, Neuraé et Haribo. J&apos;ai obtenu la certification Salesforce B2C Commerce Developer en 2023.
                             </p>
                             <p className="text-justify font-medium indent-10">
-                                Pour être plus polyvalent et efficace, j&apos;ai également suivi des
-                                formations et appris de nouvelles technologies telles que React,
-                                Next.js ou encore TailwindCSS. N&apos;hésitez pas à consulter mes
-                                différents projets!
+                                En 2026, j&apos;ai livré trois applications from scratch avec intégration LLM en pilotant le cycle produit complet par IA : <strong>Dog Days</strong> (jeu 4X multijoueur web — Next.js, MongoDB, Redis, 1&nbsp;200+ tests), <strong>Commis</strong> (assistant pâtisserie IA sur Android — React Native, Gemini Flash) et <strong>Runova</strong> (app gamifiée Couch-to-5K — cycle produit en 14 jours). Profil product-first, autonome, issu d&apos;une formation scientifique (Doctorat en Biothérapie Cellulaire et Tissulaire, UPMC 2018), je cherche aujourd&apos;hui un poste de développeur Full Stack IA ou un binôme CTO. N&apos;hésitez pas à me contacter !
                             </p>
                         </div>
                         <div className="hidden md:block" />
@@ -116,10 +102,10 @@ const About = () => {
                         <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
                             <div className="flex flex-col items-end justify-center xl:items-center rounded-2xl border-2 border-solid border-dark bg-light p-4 dark:bg-dark dark:border-light lg:mx-1">
                                 <h2 className="text-3xl font-bold lg:text-2xl sm:text-xl xs:text-lg text-center">
-                                    Développeur certifié
+                                    Développeur Full Stack IA
                                 </h2>
-                                <h2 className="text-3xl font-bold lg:text-2xl sm:text-xl xs:text-lg text-center">
-                                    Salesforce Commerce Cloud
+                                <h2 className="text-xl font-medium lg:text-lg sm:text-base xs:text-sm text-center text-dark/75 dark:text-light/75 mt-1">
+                                    React · TypeScript · Node.js
                                 </h2>
                             </div>
                             <div className="flex flex-col items-end xl:items-center justify-center lg:mx-1">
