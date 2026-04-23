@@ -96,8 +96,8 @@ export const skills = {
             name: "React Native / Expo",
             x: "-26vw",
             y: "-8vw",
-            colorLight: "bg-zinc-800",
-            colorDark: "bg-zinc-200",
+            colorLight: "bg-cyan-700",
+            colorDark: "bg-cyan-300",
         },
         {
             name: "Firebase",
