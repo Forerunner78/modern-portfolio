@@ -47,9 +47,9 @@ const ProjectCard = ({ project, isFeatured = false }) => {
     );
 
     return (
-        <div className={containerClass}>
+        <div className={`${containerClass} h-full`}>
             <article className={`
-                ${styles.card.glow} w-full flex ${contentLayout}
+                ${styles.card.glow} w-full h-full flex ${contentLayout}
                 ${styles.card.base} ${styles.card.light} ${styles.card.dark}
                 ${isFeatured ? 'p-8 lg:p-6 sm:p-4' : 'p-6 sm:p-4'}
             `}>
@@ -64,7 +64,7 @@ const ProjectCard = ({ project, isFeatured = false }) => {
                 )}
 
                 <div className={`
-                    flex flex-col
+                    flex flex-col flex-1
                     ${isFeatured ? 'w-1/2 lg:w-full pl-6 lg:pl-0 lg:pt-6' : 'w-full pt-4'}
                 `}>
                     {link ? (
@@ -88,7 +88,7 @@ const ProjectCard = ({ project, isFeatured = false }) => {
                     <Technologies technologies={technologies} />
 
                     {(github || link) && (
-                        <div className="mt-6 flex items-center gap-4">
+                        <div className="mt-auto pt-6 flex items-center gap-4">
                             {github && (
                                 <motion.a
                                     href={github}
