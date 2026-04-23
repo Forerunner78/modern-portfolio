@@ -4,7 +4,7 @@ import { colors } from "../styles/theme";
 
 const Footer = () => {
     return (
-        <footer className="w-full border-t border-gray-200 dark:border-neutral-800 bg-gray-50/95 dark:bg-neutral-900/95 shadow-[0_-1px_3px_rgba(0,0,0,0.05)] dark:shadow-[0_-1px_3px_rgba(0,0,0,0.3)] backdrop-blur-sm mt-16">
+        <footer className="w-full border-t border-gray-200 dark:border-neutral-800 bg-light dark:bg-dark shadow-[0_-1px_3px_rgba(0,0,0,0.05)] dark:shadow-[0_-1px_3px_rgba(0,0,0,0.3)] backdrop-blur-sm mt-16">
             <Layout className="max-w-6xl mx-auto px-8 py-8 flex items-center justify-between gap-12 xs:flex-col">
                 <div className="flex flex-row items-center">
                     <div className={`${colors.text.base} text-sm font-medium text-balance`}>
