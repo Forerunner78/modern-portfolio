@@ -10,7 +10,7 @@ const displaySkills = (skills) => {
         return (
             <motion.div
                 key={name}
-                className={`flex items-center justify-center rounded-full font-semibold ${skill.colorLight} text-light py-3 px-6 shadow-dark cursor-pointer absolute dark:text-dark dark:${skill.colorDark} lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 sm:bg-transparent sm:dark:bg-transparent sm:font-bold sm:text-xs sm:p-2 sm:text-dark sm:dark:text-light`}
+                className={`flex items-center justify-center rounded-full font-semibold ${skill.colorClass} text-light py-3 px-6 shadow-dark cursor-pointer absolute dark:text-dark lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 sm:bg-transparent sm:dark:bg-transparent sm:font-bold sm:text-xs sm:p-2 sm:text-dark sm:dark:text-light`}
                 whileHover={{ scale: 1.25 }}
                 initial={{ x: 0, y: 0 }}
                 whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
