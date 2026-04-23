@@ -61,7 +61,7 @@ export default function Home() {
                                 <Link
                                     href="/resume.pdf"
                                     target="_blank"
-                                    className={`${colors.text.accent} h-12 inline-flex items-center justify-center px-6 rounded-md border border-primary-700 bg-transparent hover:bg-primary-50 transition duration-150 hover:scale-105 text-lg font-medium dark:border-accentDark-500`}
+                                    className={`${colors.text.accent} h-12 inline-flex items-center justify-center px-6 rounded-md border border-primary-700 bg-transparent hover:bg-primary-50 transition duration-150 hover:scale-105 text-lg font-medium dark:border-accentDark-500 dark:hover:bg-accentDark-900/20`}
                                     download={true}
                                 >
                                     CV <LinkArrow className={"w-5 inline-block ml-2"} />

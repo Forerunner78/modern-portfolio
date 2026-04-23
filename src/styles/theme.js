@@ -15,10 +15,10 @@ export const componentStyles = {
     },
     button: {
         base: 'rounded-lg font-medium transform transition-all duration-300',
-        primary: 'bg-primary-700 text-white hover:bg-primary-800 hover:shadow-lg',
-        secondary: 'border border-primary-700 text-primary-700 hover:bg-primary-50 dark:border-accentDark-400 dark:text-accentDark-300',
+        primary: 'bg-primary-700 text-white hover:bg-primary-800 hover:shadow-lg dark:bg-accentDark-500 dark:hover:bg-accentDark-600',
+        secondary: 'border border-primary-700 text-primary-700 hover:bg-primary-50 dark:border-accentDark-400 dark:text-accentDark-300 dark:hover:bg-accentDark-900/20',
         icon: 'p-2 hover:bg-primary-50 dark:hover:bg-accentDark-900/20 rounded-full',
-        contact: 'h-12 inline-flex items-center justify-center px-6 rounded-md bg-primary-700 text-white shadow-md hover:bg-primary-800 hover:shadow-lg transform transition duration-150 hover:scale-105 text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-primary-300',
+        contact: 'h-12 inline-flex items-center justify-center px-6 rounded-md bg-primary-700 text-white shadow-md hover:bg-primary-800 hover:shadow-lg transform transition duration-150 hover:scale-105 text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-primary-300 dark:bg-accentDark-500 dark:hover:bg-accentDark-600 dark:focus:ring-accentDark-300',
         hamburger: 'flex-col justify-center items-center hidden lg:flex lg:absolute lg:left-20 lg:top-10',
     },
     header: {
