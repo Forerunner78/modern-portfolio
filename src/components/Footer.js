@@ -9,9 +9,9 @@ const Footer = () => {
                 <div className="flex flex-row items-center">
                     <div className={`${colors.text.base} text-sm font-medium text-balance`}>
                         Build with{" "}
-                        <span className={colors.text.violet}>&#9825;</span>
+                        <span className={colors.text.accent}>&#9825;</span>
                         {" "}by{" "}
-                        <UnderlinedLink href="https://github.com/Forerunner78" className={colors.text.violet} >
+                        <UnderlinedLink href="https://github.com/Forerunner78" className={colors.text.accent} >
                             Alexandre Ribault
                         </UnderlinedLink>
                     </div>
@@ -21,7 +21,7 @@ const Footer = () => {
                     <div className="mb-2 font-medium">{new Date().getFullYear()} &copy; All Rights Reserved</div>
                     <div className="text-xs">
                         Thanks to{" "}
-                        <UnderlinedLink href="https://github.com/codebucks27" className={colors.text.violet}>
+                        <UnderlinedLink href="https://github.com/codebucks27" className={colors.text.accent}>
                             CodeBucks
                         </UnderlinedLink>
                     </div>

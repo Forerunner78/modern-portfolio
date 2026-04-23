@@ -76,7 +76,7 @@ const ProjectCard = ({ project, isFeatured = false }) => {
                     )}
 
                     {status && (
-                        <span className="mx-auto mt-2 inline-flex items-center rounded-full border border-violet-500/40 bg-violet-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-violet-700 dark:border-violet-400/40 dark:bg-violet-500/10 dark:text-violet-300">
+                        <span className="mx-auto mt-2 inline-flex items-center rounded-full border border-primary-500/40 bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary-800 dark:border-accentDark-400/40 dark:bg-accentDark-500/10 dark:text-accentDark-300">
                             {status}
                         </span>
                     )}

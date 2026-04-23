@@ -6,7 +6,7 @@ const Technologies = ({ technologies }) => {
             {technologies.map((tech, index) => (
                 <span
                     key={index}
-                    className="px-3 py-1 text-sm font-medium rounded-full bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300 hover:bg-violet-200 dark:hover:bg-violet-900/40 transition-colors"
+                    className="px-3 py-1 text-sm font-medium rounded-full bg-primary-100 text-primary-800 dark:bg-accentDark-900/30 dark:text-accentDark-300 hover:bg-primary-200 dark:hover:bg-accentDark-900/40 transition-colors"
                     title={tech}
                 >
                     {tech}
