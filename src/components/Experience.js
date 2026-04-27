@@ -47,6 +47,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-primary dark:text-primaryDark capitalize"
+                            aria-label={`Site de ${company} (nouvel onglet)`}
                         >
                             @{company}
                         </a>
