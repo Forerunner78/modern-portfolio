@@ -4,6 +4,8 @@ export const GithubIcon = ({ className, ...rest }) => (
         width="1em"
         height="1em"
         viewBox="0 0 512 512"
+        aria-hidden="true"
+        focusable="false"
         {...rest}
         className={`${className}`}
     >
@@ -21,6 +23,8 @@ export const LinkedInIcon = ({ className, ...rest }) => (
         width="1em"
         height="1em"
         viewBox="0 0 256 256"
+        aria-hidden="true"
+        focusable="false"
         {...rest}
         className={`w-full h-auto ${className}`}
     >
@@ -42,6 +46,8 @@ export const SunIcon = ({ className, ...rest }) => (
         width="24"
         height="24"
         viewBox="0 0 24 24"
+        aria-hidden="true"
+        focusable="false"
         {...rest}
         className={`w-full h-auto ${className}`}
     >
@@ -178,6 +184,8 @@ export const MoonIcon = ({ className, ...rest }) => (
         width="24"
         height="24"
         viewBox="0 0 24 24"
+        aria-hidden="true"
+        focusable="false"
         {...rest}
         className={`w-full h-auto ${className}`}
     >
@@ -288,6 +296,8 @@ export const LinkArrow = ({ className, ...rest }) => (
         height={24}
         viewBox="0 0 24 24"
         className={`w-full h-auto ${className}`}
+        aria-hidden="true"
+        focusable="false"
         {...rest}
     >
         <path fill="none" d="M0 0h24v24H0z" />
@@ -309,6 +319,8 @@ export const TrailheadIcon = ({ className, ...rest }) => (
         height="1em"
         viewBox="0 0 900 900"
         className={`w-full h-auto ${className}`}
+        aria-hidden="true"
+        focusable="false"
     {...rest}
   >
     <path

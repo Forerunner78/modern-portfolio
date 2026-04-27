@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="flex flex-row items-center">
                     <div className={`${colors.text.base} text-sm font-medium text-balance`}>
                         Build with{" "}
-                        <span className={colors.text.accent}>&#9825;</span>
+                        <span className={colors.text.accent} aria-hidden="true">&#9825;</span>
                         {" "}by{" "}
                         <UnderlinedLink href="https://github.com/Forerunner78" className={colors.text.accent} >
                             Alexandre Ribault
