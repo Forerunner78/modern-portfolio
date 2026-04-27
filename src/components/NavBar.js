@@ -47,6 +47,9 @@ const NavBar = () => {
             <button
                 className={styles.button.hamburger}
                 onClick={handleClick}
+                aria-label={isOpen ? "Fermer le menu de navigation" : "Ouvrir le menu de navigation"}
+                aria-expanded={isOpen}
+                aria-controls="mobile-navigation"
             >
                 <span
                     className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${
@@ -93,6 +96,7 @@ const NavBar = () => {
                         whileHover={motionPresets.icon.whileHover}
                         whileTap={motionPresets.icon.whileTap}
                         className="w-6 mx-3"
+                        aria-label="Profil LinkedIn d'Alexandre Ribault (nouvel onglet)"
                     >
                         <LinkedInIcon />
                     </motion.a>
@@ -102,6 +106,7 @@ const NavBar = () => {
                         whileHover={motionPresets.icon.whileHover}
                         whileTap={motionPresets.icon.whileTap}
                         className="w-6 mx-3"
+                        aria-label="Profil GitHub d'Alexandre Ribault (nouvel onglet)"
                     >
                         <GithubIcon className='w-full h-auto'/>
                     </motion.a>
@@ -111,6 +116,7 @@ const NavBar = () => {
                         whileHover={motionPresets.icon.whileHover}
                         whileTap={motionPresets.icon.whileTap}
                         className="w-6 mx-3"
+                        aria-label="Profil Salesforce Trailhead d'Alexandre Ribault (nouvel onglet)"
                     >
                         <TrailheadIcon />
                     </motion.a>
@@ -119,6 +125,8 @@ const NavBar = () => {
                             mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
                         }`}
                         onClick={() => setMode(mode === "light" ? "dark" : "light")}
+                        aria-label={mode === "dark" ? "Activer le mode clair" : "Activer le mode sombre"}
+                        aria-pressed={mode === "dark"}
                     >
                         {mode === "dark" ? (
                             <SunIcon className={"fill-dark"} />
@@ -131,6 +139,7 @@ const NavBar = () => {
 
             {isOpen ? (
                 <motion.div
+                    id="mobile-navigation"
                     initial={{ scale: 0, opacity: 0, x: "-50%", y: "50%" }}
                     animate={{ scale: 1, opacity: 1 }}
                     className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
@@ -163,6 +172,7 @@ const NavBar = () => {
                             whileHover={motionPresets.icon.whileHover}
                             whileTap={motionPresets.icon.whileTap}
                             className="w-6 mx-3"
+                            aria-label="Profil LinkedIn d'Alexandre Ribault (nouvel onglet)"
                         >
                             <LinkedInIcon />
                         </motion.a>
@@ -172,6 +182,7 @@ const NavBar = () => {
                             whileHover={motionPresets.icon.whileHover}
                             whileTap={motionPresets.icon.whileTap}
                             className="w-6 mx-3 bg-light dark:bg-dark rounded-full"
+                            aria-label="Profil GitHub d'Alexandre Ribault (nouvel onglet)"
                         >
                             <GithubIcon className='w-full h-auto'/>
                         </motion.a>
@@ -181,6 +192,7 @@ const NavBar = () => {
                             whileHover={motionPresets.icon.whileHover}
                             whileTap={motionPresets.icon.whileTap}
                             className="w-6 mx-3"
+                            aria-label="Profil Salesforce Trailhead d'Alexandre Ribault (nouvel onglet)"
                         >
                             <TrailheadIcon />
                         </motion.a>
@@ -189,6 +201,8 @@ const NavBar = () => {
                                 mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
                             }`}
                             onClick={() => setMode(mode === "light" ? "dark" : "light")}
+                            aria-label={mode === "dark" ? "Activer le mode clair" : "Activer le mode sombre"}
+                            aria-pressed={mode === "dark"}
                         >
                             {mode === "dark" ? (
                                 <SunIcon className={"fill-dark"} />
