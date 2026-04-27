@@ -93,6 +93,7 @@ const NavBar = () => {
                     <motion.a
                         href="https://fr.linkedin.com/in/alexandre-ribault-00945668"
                         target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={motionPresets.icon.whileHover}
                         whileTap={motionPresets.icon.whileTap}
                         className="w-6 mx-3"
@@ -103,6 +104,7 @@ const NavBar = () => {
                     <motion.a
                         href="https://github.com/Forerunner78"
                         target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={motionPresets.icon.whileHover}
                         whileTap={motionPresets.icon.whileTap}
                         className="w-6 mx-3"
@@ -113,6 +115,7 @@ const NavBar = () => {
                     <motion.a
                         href="https://www.salesforce.com/trailblazer/alexribault"
                         target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={motionPresets.icon.whileHover}
                         whileTap={motionPresets.icon.whileTap}
                         className="w-6 mx-3"
@@ -169,6 +172,7 @@ const NavBar = () => {
                         <motion.a
                             href="https://fr.linkedin.com/in/alexandre-ribault-00945668"
                             target="_blank"
+                            rel="noopener noreferrer"
                             whileHover={motionPresets.icon.whileHover}
                             whileTap={motionPresets.icon.whileTap}
                             className="w-6 mx-3"
@@ -179,6 +183,7 @@ const NavBar = () => {
                         <motion.a
                             href="https://github.com/Forerunner78"
                             target="_blank"
+                            rel="noopener noreferrer"
                             whileHover={motionPresets.icon.whileHover}
                             whileTap={motionPresets.icon.whileTap}
                             className="w-6 mx-3 bg-light dark:bg-dark rounded-full"
@@ -189,6 +194,7 @@ const NavBar = () => {
                         <motion.a
                             href="https://www.salesforce.com/trailblazer/alexribault"
                             target="_blank"
+                            rel="noopener noreferrer"
                             whileHover={motionPresets.icon.whileHover}
                             whileTap={motionPresets.icon.whileTap}
                             className="w-6 mx-3"
