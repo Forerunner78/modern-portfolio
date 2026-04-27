@@ -225,5 +225,15 @@ Les 8 screenshots sont à copier dans `public/screenshots/before/` du repo avant
 
 ---
 
-*Dernière mise à jour : 17 avril 2026*
+## Audits reportés
+
+Les audits identifiés pendant un chantier mais volontairement reportés à un chantier ultérieur sont consignés dans [KNOWN_ISSUES.md](KNOWN_ISSUES.md). Ce fichier conserve le diagnostic technique précis pour ne pas avoir à relancer un audit complet au moment du fix.
+
+À ce jour, deux audits Lighthouse a11y sont reportés au **Chantier 7 · Polish** (prévu 13/07/2026) :
+- `color-contrast` Footer (ratio 4.43 → 4.5 manquant)
+- `label-content-name-mismatch` Logo (texte "AR" pas inclus dans aria-label)
+
+---
+
+*Dernière mise à jour : 27 avril 2026*
 *Aligné avec le calendrier Google Calendar ARDigital · Roadmap (22 posts LinkedIn, 11 semaines)*
