@@ -56,7 +56,13 @@ const ProjectCard = ({ project, isFeatured = false }) => {
                 <div className={styles.card.glowEffect} />
 
                 {link ? (
-                    <Link href={link} target="_blank" className={imageContainerClass}>
+                    <Link
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={imageContainerClass}
+                        aria-label={`Apercu du projet ${title} (nouvel onglet)`}
+                    >
                         {image}
                     </Link>
                 ) : (
@@ -68,7 +74,13 @@ const ProjectCard = ({ project, isFeatured = false }) => {
                     ${isFeatured ? 'w-1/2 lg:w-full pl-6 lg:pl-0 lg:pt-6' : 'w-full pt-4'}
                 `}>
                     {link ? (
-                        <UnderlinedLink href={link} target="_blank" className="group text-center">
+                        <UnderlinedLink
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group text-center"
+                            aria-label={`Page du projet ${title} (nouvel onglet)`}
+                        >
                             {titleNode}
                         </UnderlinedLink>
                     ) : (
@@ -108,9 +120,8 @@ const ProjectCard = ({ project, isFeatured = false }) => {
                                     href={link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    whileHover={motionPresets.lift.whileHover}
-                                    whileTap={motionPresets.lift.whileTap}
                                     className={styles.button.contact}
+                                    aria-label={`Voir le projet ${title} en ligne (nouvel onglet)`}
                                 >
                                     Voir le projet
                                 </Link>
