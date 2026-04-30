@@ -42,9 +42,9 @@ export const componentStyles = {
         },
         description: 'my-4 text-gray-700 dark:text-gray-300 text-base leading-relaxed text-justify',
         imageContainer: {
-            base: 'block overflow-hidden rounded-lg cursor-pointer',
-            featured: 'w-1/2 lg:w-full',
-            normal: 'w-full',
+            base: 'relative block overflow-hidden rounded-lg cursor-pointer bg-gray-100 dark:bg-gray-900',
+            featured: 'w-1/2 lg:w-full aspect-[16/10]',
+            normal: 'w-full aspect-[4/3]',
         },
     },
     tag: {
