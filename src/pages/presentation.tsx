@@ -43,11 +43,7 @@ const experienceYears = () => {
 };
 
 const projectsNumber = (collaboration: CollaborationItem[]) => {
-    let number = 0;
-    collaboration.map((project) => {
-        number += project.projects.length;
-    });
-    return number;
+    return collaboration.reduce((total, collab) => total + collab.projects.length, 0);
 };
 
 const collaborationNumber = (collaboration: CollaborationItem[]) => {
