@@ -17,7 +17,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-end text-sm text-gray-500 dark:text-gray-400 xs:items-center xs:mt-6">
+                <div className="flex flex-col items-end text-sm text-gray-600 dark:text-gray-400 xs:items-center xs:mt-6">
                     <div className="mb-2 font-medium">{new Date().getFullYear()} &copy; All Rights Reserved</div>
                     <div className="text-xs">
                         Thanks to{" "}

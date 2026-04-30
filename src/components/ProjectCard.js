@@ -6,8 +6,6 @@ import Technologies from "./Technologies";
 import UnderlinedLink from "./UnderlinedLink";
 import { componentStyles as styles, motionPresets } from "../styles/theme";
 
-const MotionImage = motion(Image);
-
 const ProjectCard = ({ project, isFeatured = false }) => {
     const { name: title, img, summary, live_demo_url: link, gitHub_url: github, technologies, status } = project;
 
@@ -25,12 +23,11 @@ const ProjectCard = ({ project, isFeatured = false }) => {
     `;
 
     const image = (
-        <MotionImage
+        <Image
             src={img}
             alt={title}
-            className="w-full h-auto object-cover"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.2 }}
+            fill
+            className="object-contain transition-transform duration-200 ease-out group-hover/img:scale-105"
             priority
             sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
         />
@@ -60,13 +57,13 @@ const ProjectCard = ({ project, isFeatured = false }) => {
                         href={link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={imageContainerClass}
+                        className={`group/img ${imageContainerClass}`}
                         aria-label={`Apercu du projet ${title} (nouvel onglet)`}
                     >
                         {image}
                     </Link>
                 ) : (
-                    <div className={imageContainerClass}>{image}</div>
+                    <div className={`group/img ${imageContainerClass}`}>{image}</div>
                 )}
 
                 <div className={`
