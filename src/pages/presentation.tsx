@@ -7,11 +7,15 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Education from "../components/Education";
-import { projects } from "../components/data/Projects";
+import { projects, CollaborationItem } from "../components/data/Projects";
 import TransitionEffect from "../components/TransitionEffect";
 
-const AnimatedNumbers = ({ value }) => {
-    const ref = useRef(null);
+interface AnimatedNumbersProps {
+    value: number;
+}
+
+const AnimatedNumbers = ({ value }: AnimatedNumbersProps) => {
+    const ref = useRef<HTMLSpanElement>(null);
     const motionValue = useMotionValue(0);
     const springValue = useSpring(motionValue, { duration: 3000 });
     const isInView = useInView(ref, { once: true });
@@ -38,15 +42,15 @@ const experienceYears = () => {
     return experienceYears;
 };
 
-const projectsNumber = (collaboration) => {
-    var number = 0;
-    var projects = collaboration.map(function (project) {
+const projectsNumber = (collaboration: CollaborationItem[]) => {
+    let number = 0;
+    collaboration.map((project) => {
         number += project.projects.length;
     });
     return number;
 };
 
-const collaborationNumber = (collaboration) => {
+const collaborationNumber = (collaboration: CollaborationItem[]) => {
     return collaboration.length;
 };
 
