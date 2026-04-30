@@ -61,9 +61,14 @@ async function processOne({ src, dest, format, quality, maxWidth }) {
 
     const input = sharp(src);
     const meta = await input.metadata();
-    let pipeline = input;
+    // Applique l'orientation EXIF puis strip la metadata (sinon WebP perd l'EXIF
+    // et l'image ressort dans son orientation pixel-natif, photo couchee).
+    let pipeline = input.rotate();
 
-    if (maxWidth && meta.width > maxWidth) {
+    // Apres .rotate(), si EXIF=6/8 les dimensions visuelles sont swappees.
+    const visualWidth =
+        meta.orientation && meta.orientation >= 5 ? meta.height : meta.width;
+    if (maxWidth && visualWidth > maxWidth) {
         pipeline = pipeline.resize({ width: maxWidth, withoutEnlargement: true });
     }
 
