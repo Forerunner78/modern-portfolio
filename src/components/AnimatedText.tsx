@@ -1,16 +1,21 @@
-import { animate, motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
-const quote = {
+interface AnimatedTextProps {
+    text: string;
+    className?: string;
+}
+
+const quote: Variants = {
     initial: { opacity: 1 },
     animate: { opacity: 1, transition: { delay: 0.5, staggerChildren: 0.08 } },
 };
 
-const singleWord = {
+const singleWord: Variants = {
     initial: { opacity: 0, y: 50 },
     animate: { opacity: 1, y: 0, transition: { duration: 1 } },
 };
 
-const AnimatedText = ({ text, className = "" }) => {
+const AnimatedText = ({ text, className = "" }: AnimatedTextProps) => {
     return (
         <div className="w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:py-0">
             <motion.h1

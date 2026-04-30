@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
-const useThemeSwitcher = () => {
+export type ThemeMode = "" | "dark" | "light";
+
+const useThemeSwitcher = (): [ThemeMode, Dispatch<SetStateAction<ThemeMode>>] => {
     const preferDarkQuery = "(prefer-color-scheme: dark)";
-    const [mode, setMode] = useState("");
+    const [mode, setMode] = useState<ThemeMode>("");
 
     useEffect(() => {
         const mediaQuery = window.matchMedia(preferDarkQuery);
@@ -10,7 +12,7 @@ const useThemeSwitcher = () => {
 
         const handleChange = () => {
             if (userPref) {
-                let check = userPref === "dark" ? "dark" : "light";
+                const check: ThemeMode = userPref === "dark" ? "dark" : "light";
                 setMode(check);
                 if (check === "dark") {
                     document.documentElement.classList.add("dark");
@@ -18,7 +20,7 @@ const useThemeSwitcher = () => {
                     document.documentElement.classList.remove("dark");
                 }
             } else {
-                let check = mediaQuery.matches ? "dark" : "light";
+                const check: ThemeMode = mediaQuery.matches ? "dark" : "light";
                 setMode(check);
                 if (check === "dark") {
                     document.documentElement.classList.add("dark");

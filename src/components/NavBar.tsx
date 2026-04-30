@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import UnderlinedLink from "./UnderlinedLink";
@@ -8,7 +7,14 @@ import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
 import { useState } from "react";
 
-const CustomMobileLink = ({ href, title, className = "", toggle }) => {
+interface CustomMobileLinkProps {
+    href: string;
+    title: string;
+    className?: string;
+    toggle: () => void;
+}
+
+const CustomMobileLink = ({ href, title, className = "", toggle }: CustomMobileLinkProps) => {
     const router = useRouter();
 
     const handleClick = () => {
@@ -18,7 +24,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 
     return (
         <button
-            href={href}
+            type="button"
             className={`${className} relative group text-light dark:text-dark my-2`}
             onClick={handleClick}
         >

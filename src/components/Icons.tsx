@@ -1,4 +1,10 @@
-export const GithubIcon = ({ className, ...rest }) => (
+import { SVGProps } from "react";
+
+interface IconProps extends Omit<SVGProps<SVGSVGElement>, "className"> {
+    className?: string;
+}
+
+export const GithubIcon = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -17,7 +23,7 @@ export const GithubIcon = ({ className, ...rest }) => (
     </svg>
 );
 
-export const LinkedInIcon = ({ className, ...rest }) => (
+export const LinkedInIcon = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -40,7 +46,7 @@ export const LinkedInIcon = ({ className, ...rest }) => (
     </svg>
 );
 
-export const SunIcon = ({ className, ...rest }) => (
+export const SunIcon = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -178,7 +184,7 @@ export const SunIcon = ({ className, ...rest }) => (
     </svg>
 );
 
-export const MoonIcon = ({ className, ...rest }) => (
+export const MoonIcon = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -289,7 +295,7 @@ export const MoonIcon = ({ className, ...rest }) => (
     </svg>
 );
 
-export const LinkArrow = ({ className, ...rest }) => (
+export const LinkArrow = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width={24}
@@ -312,7 +318,7 @@ export const LinkArrow = ({ className, ...rest }) => (
     </svg>
 );
 
-export const TrailheadIcon = ({ className, ...rest }) => (
+export const TrailheadIcon = ({ className, ...rest }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
         width="1em"

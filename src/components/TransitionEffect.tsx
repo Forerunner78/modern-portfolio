@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, Transition } from "framer-motion";
 
 // Effet de transition "rideau" : pendant l'exit de la page sortante, le rideau
 // se ferme depuis la gauche (scaleX 0 -> 1, origin: left). Pendant l'animate de
@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 // originX bascule en duration:0 pour que le pivot saute pendant que le rideau
 // est plein largeur (donc invisible a l'oeil).
 
-const sharedTransition = {
+const sharedTransition: Transition = {
     duration: 0.8,
     ease: "easeInOut",
     originX: { duration: 0 },

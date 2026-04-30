@@ -1,7 +1,15 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { ComponentProps, ReactNode } from "react";
 
-const UnderlinedLink = ({ href, children, className = "", ...props }) => {
+type LinkProps = ComponentProps<typeof Link>;
+
+interface UnderlinedLinkProps extends Omit<LinkProps, "children"> {
+    children: ReactNode;
+    className?: string;
+}
+
+const UnderlinedLink = ({ href, children, className = "", ...props }: UnderlinedLinkProps) => {
     const router = useRouter();
     const isActive = router.asPath === href;
 
