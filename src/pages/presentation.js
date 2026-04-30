@@ -91,13 +91,16 @@ const About = () => {
                         <div className="hidden md:block" />
                         <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:col-span-6 md:order-1">
                             <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-dark dark:bg-light" />
-                            <Image
-                                src={ProfilePicture}
-                                alt="Portrait d'Alexandre Ribault"
-                                className="w-full h-auto rounded-2xl"
-                                priority
-                                sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
-                            />
+                            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl">
+                                <Image
+                                    src={ProfilePicture}
+                                    alt="Portrait d'Alexandre Ribault"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                    sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
+                                />
+                            </div>
                         </div>
                         <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
                             <div className="flex flex-col items-end justify-center xl:items-center rounded-2xl border-2 border-solid border-dark bg-light p-4 dark:bg-dark dark:border-light lg:mx-1">
