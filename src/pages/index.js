@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Image from "next/image";
-import profilePic from "./../img/photo_Alex_R.jpg";
 import Link from "next/link";
 import { componentStyles, colors } from "../styles/theme";
 import { LinkArrow } from "../components/Icons";
@@ -30,13 +29,14 @@ export default function Home() {
                 <Layout className="p-32 pt-0 xl:p-24 lg:p-16 md:p-12 md:pt-16 sm:pt-8">
                     <div className="flex items-center justify-between w-full lg:flex-col">
                         <div className="w-1/2 flex justify-center lg:w-full lg:mb-8">
-                            <div className="rounded-full overflow-hidden w-72 h-72 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72 shadow-[0_8px_28px_-6px_rgba(0,0,0,0.2),0_18px_38px_-12px_rgba(0,0,0,0.15)] ring-1 ring-gray-100 dark:ring-neutral-800 bg-gradient-to-tr from-white to-gray-50 transform transition duration-300 hover:scale-105 hover:shadow-[0_10px_32px_-4px_rgba(0,0,0,0.25),0_22px_48px_-8px_rgba(0,0,0,0.2)]">
+                            <div className="relative rounded-full overflow-hidden w-72 h-72 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72 shadow-[0_8px_28px_-6px_rgba(0,0,0,0.2),0_18px_38px_-12px_rgba(0,0,0,0.15)] ring-1 ring-gray-100 dark:ring-neutral-800 bg-gradient-to-tr from-white to-gray-50 transform transition duration-300 hover:scale-105 hover:shadow-[0_10px_32px_-4px_rgba(0,0,0,0.25),0_22px_48px_-8px_rgba(0,0,0,0.2)]">
                                 <Image
-                                    src={profilePic}
+                                    src="/img/photo_Alex_R.webp"
                                     alt="Portrait d'Alexandre Ribault"
-                                    className="object-cover object-top w-full h-full"
+                                    fill
+                                    className="object-cover object-top"
                                     priority
-                                    sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
+                                    sizes="(max-width:768px) 12rem, (max-width:1200px) 16rem, 18rem"
                                 />
                             </div>
                         </div>

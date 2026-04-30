@@ -1,8 +1,3 @@
-import AlexShopEcommerce from "./../../img/Alex_Shop_Ecommerce.jpg";
-import DogDays from "./../../img/dogdays/KluITgQ - Imgur.jpg";
-import Runova from "./../../img/runova/Screenshot_20260403_093659_Runova Couch to 5K.jpg";
-import Commis from "./../../img/commis/Screenshot_20260409_210544_Commis.jpg";
-
 export const projects = {
     collaborations: [
         {
@@ -41,7 +36,7 @@ export const projects = {
     personnalProjects: [
         {
             name: "Dog Days",
-            img: DogDays,
+            img: "/img/dogdays/KluITgQ_Imgur.jpg",
             live_demo_url: "https://dog-days-web.vercel.app/",
             technologies: ["#Next.js", "#TypeScript", "#MongoDB", "#Redis", "#Claude Code"],
             colSize: 12,
@@ -50,7 +45,7 @@ export const projects = {
         },
         {
             name: "Commis",
-            img: Commis,
+            img: "/img/commis/Screenshot_20260409_210544_Commis.jpg",
             technologies: ["#React Native", "#Expo", "#Gemini Flash", "#SQLite", "#RevenueCat"],
             colSize: 6,
             status: "En revue Google Play",
@@ -59,7 +54,7 @@ export const projects = {
         },
         {
             name: "Runova",
-            img: Runova,
+            img: "/img/runova/Screenshot_20260403_093659_Runova_Couch_to_5K.jpg",
             technologies: ["#React Native", "#Expo", "#Firebase", "#RevenueCat"],
             colSize: 6,
             status: "Projet personnel",
@@ -68,7 +63,7 @@ export const projects = {
         },
         {
             name: "Alex Shop · Site e-commerce",
-            img: AlexShopEcommerce,
+            img: "/img/Alex_Shop_Ecommerce.webp",
             live_demo_url: "https://alex-shop-blue.vercel.app/",
             gitHub_url: "https://github.com/Forerunner78/alex-shop",
             technologies: ["#Next.js", "#MongoDB", "#PayPal"],
