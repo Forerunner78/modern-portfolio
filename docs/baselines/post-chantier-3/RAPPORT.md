@@ -69,6 +69,28 @@ Les images projets (Dog Days 1.62, Alex Shop 2.00, Runova/Commis 0.46) avaient �
 - `src/pages/presentation.js` — photo encapsulée dans un container `aspect-[4/3] relative overflow-hidden` + `<Image fill object-cover>`.
 - `src/pages/_app.js` — Montserrat configurée avec `display: 'swap'`, `adjustFontFallback: true`, `preload: true` (durcissement, défauts déjà bons).
 
+## Reprise · TransitionEffect en scaleX rétractation (commit b39…)
+
+L'animation `translateX` simple du premier fix donnait un effet visuel de "fenêtre qui glisse" : double traversée gauche→droite puis droite→gauche perçue comme bizarre. Réécriture en `scaleX` + `originX` pour reproduire l'esprit de l'animation d'origine (rideau qui se ferme puis s'ouvre) tout en restant 100% transform GPU.
+
+Implémentation :
+- Pendant l'`exit` de la page sortante : `scaleX 0 → 1` avec `originX: 0` (gauche) → le rideau se ferme depuis la gauche, masque le démontage.
+- Pendant l'`animate` de la page entrante : `scaleX 1 → 0` avec `originX: 1` (droite) → le rideau s'ouvre vers la droite, révèle la nouvelle page.
+- `originX` bascule en `duration: 0` (saut instantané) pendant que `scaleX = 1` (rideau plein, pivot invisible à l'œil).
+- Cascade conservée : 3 motion.div en z-30/20/10 avec délais 0/0.2/0.4s, durée 800 ms par couche.
+- `exit` uniquement sur la première couche (z-30) pour rester fidèle à l'animation d'origine.
+
+### Validation Lighthouse v2 (post-réécriture)
+
+| Run | Page | Device | Performance | CLS |
+|---:|---|:---:|:---:|:---:|
+| 1 | /projets | desktop | 99 | **0.0000** |
+| 2 | /projets | desktop | 100 | **0.0000** |
+| 3 | /projets | desktop | 100 | **0.0000** |
+| - | /projets | mobile | 89 | **0.0000** |
+
+CLS = 0 maintenu sur les 4 mesures. Variance desktop nulle.
+
 ## Validation finale
 
-L'utilisateur doit refaire 3 runs Lighthouse via Chrome DevTools (mode desktop, throttling Cable) **après merge en `main`** pour confirmer dans les conditions exactes du post LinkedIn d'avril, avant publication du post Chantier 3.
+L'utilisateur doit refaire 3 runs Lighthouse via Chrome DevTools (mode desktop, throttling Cable) **après merge en `main`** pour confirmer dans les conditions exactes du post LinkedIn d'avril, **et tester visuellement la transition** entre `/`, `/presentation` et `/projets` (le rideau doit donner l'impression de se fermer depuis la gauche puis s'ouvrir vers la droite, pas de glissement bizarre).
