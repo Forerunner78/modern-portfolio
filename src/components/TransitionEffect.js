@@ -4,23 +4,23 @@ const TransitionEffect = () => {
     return (
         <>
             <motion.div
-                initial={{ x: "100%", width: "100%" }}
-                animate={{ x: "0%", width: "0%" }}
-                exit={{ x: ["0%", "100%"], width: ["0%", "100%"] }}
+                initial={{ x: "100%" }}
+                animate={{ x: "-100%" }}
+                exit={{ x: "100%" }}
                 transition={{ duration: 0.8, ease: "easeInOut" }}
-                className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-primary dark:bg-primaryDark"
+                className="pointer-events-none fixed inset-0 z-30 bg-primary dark:bg-primaryDark"
             />
             <motion.div
-                initial={{ x: "100%", width: "100%" }}
-                animate={{ x: "0%", width: "0%" }}
+                initial={{ x: "100%" }}
+                animate={{ x: "-100%" }}
                 transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
-                className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-light"
+                className="pointer-events-none fixed inset-0 z-20 bg-light"
             />
             <motion.div
-                initial={{ x: "100%", width: "100%" }}
-                animate={{ x: "0%", width: "0%" }}
+                initial={{ x: "100%" }}
+                animate={{ x: "-100%" }}
                 transition={{ delay: 0.4, duration: 0.8, ease: "easeInOut" }}
-                className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-dark"
+                className="pointer-events-none fixed inset-0 z-10 bg-dark"
             />
         </>
     );
