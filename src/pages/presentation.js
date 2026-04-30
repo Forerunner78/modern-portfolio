@@ -2,7 +2,6 @@ import Head from "next/head";
 import AnimatedText from "../components/AnimatedText";
 import Layout from "../components/Layout";
 import Image from "next/image";
-import ProfilePicture from "../img/photo_Alex_R.jpg";
 import { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "../components/Skills";
@@ -93,7 +92,7 @@ const About = () => {
                             <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-dark dark:bg-light" />
                             <div className="relative w-full aspect-[3/4] overflow-hidden rounded-2xl">
                                 <Image
-                                    src={ProfilePicture}
+                                    src="/img/photo_Alex_R.webp"
                                     alt="Portrait d'Alexandre Ribault"
                                     fill
                                     className="object-cover"
