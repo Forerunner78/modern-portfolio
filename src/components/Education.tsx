@@ -1,22 +1,37 @@
 import { useScroll, motion } from "framer-motion";
 import { useRef } from "react";
 import LiIcon from "./LiIcon";
-import { education } from "./data/Education";
+import { education, EducationItem } from "./data/Education";
 
-const EducationDetails = ({ education }) => {
-    return education.map((educationFact) => (
-        <Details
-            key={educationFact.name}
-            name={educationFact.name}
-            company={educationFact.company}
-            year={educationFact.year}
-            place={educationFact.address}
-        />
-    ));
+interface EducationDetailsProps {
+    education: EducationItem[];
+}
+
+interface DetailsProps {
+    name: string;
+    company: string;
+    year: number;
+    place: string;
+}
+
+const EducationDetails = ({ education }: EducationDetailsProps) => {
+    return (
+        <>
+            {education.map((educationFact) => (
+                <Details
+                    key={educationFact.name}
+                    name={educationFact.name}
+                    company={educationFact.company}
+                    year={educationFact.year}
+                    place={educationFact.address}
+                />
+            ))}
+        </>
+    );
 };
 
-const Details = ({ name, company, year, place }) => {
-    const ref = useRef(null);
+const Details = ({ name, company, year, place }: DetailsProps) => {
+    const ref = useRef<HTMLLIElement>(null);
     return (
         <li
             ref={ref}
@@ -42,7 +57,7 @@ const Details = ({ name, company, year, place }) => {
 };
 
 const Education = () => {
-    const ref = useRef(null);
+    const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["start end", "center start"],

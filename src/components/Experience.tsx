@@ -1,26 +1,43 @@
 import { useScroll, motion } from "framer-motion";
 import { useRef } from "react";
 import LiIcon from "./LiIcon";
-import { projects } from "./data/Projects";
+import { projects, CollaborationItem } from "./data/Projects";
 
-const CollabDetails = ({ collaborations }) => {
-    return collaborations.map((collab) => (
-        <Details
-            key={collab.company}
-            position={collab.position}
-            company={collab.company}
-            companyLink={collab.companyLink}
-            time={collab.time}
-            address={collab.address}
-            work={collab.work}
-        />
-    ));
+interface CollabDetailsProps {
+    collaborations: CollaborationItem[];
+}
+
+interface DetailsProps {
+    position: string;
+    company: string;
+    companyLink?: string;
+    time: string;
+    address: string;
+    work: string;
+}
+
+const CollabDetails = ({ collaborations }: CollabDetailsProps) => {
+    return (
+        <>
+            {collaborations.map((collab) => (
+                <Details
+                    key={collab.company}
+                    position={collab.position}
+                    company={collab.company}
+                    {...(collab.companyLink !== undefined && { companyLink: collab.companyLink })}
+                    time={collab.time}
+                    address={collab.address}
+                    work={collab.work}
+                />
+            ))}
+        </>
+    );
 };
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
-    const ref = useRef(null);
-    const displayWork = (works) => {
-        return works.split(". ").map(function (description, index) {
+const Details = ({ position, company, companyLink, time, address, work }: DetailsProps) => {
+    const ref = useRef<HTMLLIElement>(null);
+    const displayWork = (works: string) => {
+        return works.split(". ").map((description, index) => {
             return (
                 <li key={index} className="list-disc ms-9">
                     {description}
@@ -69,7 +86,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 };
 
 const Experience = () => {
-    const ref = useRef(null);
+    const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["start end", "center start"],

@@ -1,4 +1,8 @@
-const Technologies = ({ technologies }) => {
+interface TechnologiesProps {
+    technologies?: string[];
+}
+
+const Technologies = ({ technologies }: TechnologiesProps) => {
     if (!technologies || technologies.length === 0) return null;
 
     return (

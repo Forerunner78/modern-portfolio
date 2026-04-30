@@ -1,4 +1,16 @@
-export const skills = {
+export interface SkillItem {
+    name: string;
+    x: string;
+    y: string;
+    colorClass: string;
+    size?: string;
+}
+
+export interface SkillsData {
+    skillsArray: SkillItem[];
+}
+
+export const skills: SkillsData = {
     skillsArray: [
         {
             name: "Claude Code",

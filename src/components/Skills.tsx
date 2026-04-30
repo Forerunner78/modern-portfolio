@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { skills } from "./data/Skills";
+import { skills, SkillsData } from "./data/Skills";
 
-const displaySkills = (skills) => {
-    return skills.skillsArray.map(function (skill) {
-        var name = skill.name;
-        var x = skill.x;
-        var y = skill.y;
+const displaySkills = (skills: SkillsData) => {
+    return skills.skillsArray.map((skill) => {
+        const name = skill.name;
+        const x = skill.x;
+        const y = skill.y;
 
         return (
             <motion.div

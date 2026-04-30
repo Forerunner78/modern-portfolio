@@ -1,4 +1,31 @@
-export const projects = {
+export interface CollaborationItem {
+    name: string;
+    time: string;
+    projects: string[];
+    position: string;
+    company: string;
+    companyLink?: string;
+    address: string;
+    work: string;
+}
+
+export interface PersonalProjectItem {
+    name: string;
+    img: string;
+    live_demo_url?: string;
+    gitHub_url?: string;
+    technologies: string[];
+    colSize: number;
+    status?: string;
+    summary: string;
+}
+
+export interface ProjectsData {
+    collaborations: CollaborationItem[];
+    personnalProjects: PersonalProjectItem[];
+}
+
+export const projects: ProjectsData = {
     collaborations: [
         {
             name: "AR Digital",

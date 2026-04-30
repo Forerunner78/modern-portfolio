@@ -1,4 +1,11 @@
-export const education = [
+export interface EducationItem {
+    name: string;
+    year: number;
+    company: string;
+    address: string;
+}
+
+export const education: EducationItem[] = [
     {
         name: "Certification Salesforce B2C Commerce Developer",
         year: 2023,

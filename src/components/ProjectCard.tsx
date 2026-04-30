@@ -5,8 +5,14 @@ import { GithubIcon } from "./Icons";
 import Technologies from "./Technologies";
 import UnderlinedLink from "./UnderlinedLink";
 import { componentStyles as styles, motionPresets } from "../styles/theme";
+import { PersonalProjectItem } from "./data/Projects";
 
-const ProjectCard = ({ project, isFeatured = false }) => {
+interface ProjectCardProps {
+    project: PersonalProjectItem;
+    isFeatured?: boolean;
+}
+
+const ProjectCard = ({ project, isFeatured = false }: ProjectCardProps) => {
     const { name: title, img, summary, live_demo_url: link, gitHub_url: github, technologies, status } = project;
 
     const containerClass = isFeatured
