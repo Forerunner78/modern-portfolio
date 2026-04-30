@@ -6,7 +6,13 @@ import Footer from "../components/Footer";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 
-const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
+const montserrat = Montserrat({
+    subsets: ["latin"],
+    variable: "--font-mont",
+    display: "swap",
+    adjustFontFallback: true,
+    preload: true,
+});
 
 export default function App({ Component, pageProps }) {
     const router = useRouter();
